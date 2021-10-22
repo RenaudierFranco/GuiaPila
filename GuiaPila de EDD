@@ -1,0 +1,127 @@
+using System;
+using System.Collections;
+
+namespace Guia_Pila
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            //Ejercicio 1
+            int numero, a, b, c, d, e, f;
+
+            Console.WriteLine("Pila L.I.F.O");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("Ingrese 6 numeros a continuacion.");
+            Console.WriteLine("");
+
+            Console.Write("1er numero: ");
+            a = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("2do numero: ");
+            b = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("3er numero: ");
+            c = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("4to numero: ");
+            d = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("5to numero: ");
+            e = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("6to numero: ");
+            f = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("------------------------");
+
+            //Formato con el q se devuelven los numeros ingresados (L.I.F.O)
+            Stack miPila = new Stack();
+            miPila.Push(a);
+            miPila.Push(b);
+            miPila.Push(c);
+            miPila.Push(d);
+            miPila.Push(e);
+            miPila.Push(f);
+
+            for (byte i = 0; i < 6; i++)
+            {
+                numero = (int)miPila.Pop();
+                Console.WriteLine(numero);
+            }
+            
+
+
+            //Ejercicio 2
+            double numero, a, b, c, d, e, f;
+
+            Console.WriteLine("Cola F.I.F.O");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("Ingrese 6 numeros a continuacion.");
+            Console.WriteLine("");
+
+            Console.Write("1er numero: ");
+            a = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("2do numero: ");
+            b = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("3er numero: ");
+            c = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("4to numero: ");
+            d = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("5to numero: ");
+            e = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("6to numero: ");
+            f = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("------------------------");
+
+
+            //Formato con el q se devuelven los numeros ingresados (F.I.F.O)
+            Queue miCola = new Queue();
+            miCola.Enqueue(a);
+            miCola.Enqueue(b);
+            miCola.Enqueue(c);
+            miCola.Enqueue(d);
+            miCola.Enqueue(e);
+            miCola.Enqueue(f);
+
+            for (byte i = 0; i < 6; i++)
+            {
+                numero = (double)miCola.Dequeue();
+                Console.WriteLine(numero);
+            }
+            
+
+
+            //Ejercicio 3
+            Queue miCola = new Queue();
+            string frase = string.Empty;
+
+
+            Console.WriteLine("Se pueden ingresar todas las frases que quieras");
+            Console.WriteLine("si qres salir y ver las frases ingesadas");
+            Console.WriteLine("ingresa un renglon vacio.");
+
+            // Guardamos frases en cola
+            do
+            {
+                Console.WriteLine("Ingresa una frase: ");
+                frase = Console.ReadLine();
+                miCola.Enqueue(frase);
+            } while (frase != string.Empty);
+
+            Console.WriteLine("Frases ingresadas: ");
+            // Imprimimos frases de la cola
+            foreach (var item in miCola)
+            {
+                Console.WriteLine(item);
+            }
+        }
+    }
+}
